@@ -2,23 +2,24 @@
 ### Các matchers
 - .toBe(): Giống như phép so sánh.
 - .toEqual(): So sánh một đối tượng, kiểm tra các trường của đối tượng đấy.
-
+```javascript
 		test('two plus two is four', () => {
 			expect(2 + 2).toBe(4);
 		});
-		
+
 		test('object assignment', () => {
 			const data = {one: 1};
 			data['two'] = 2;
 			expect(data).toEqual({one: 1, two: 2});
 		});
-
+```
 ### Trạng thái
 - .toBeNull: so sánh với giá trị null.
 - .toBeUndefined: so sánh với giá trị undefined.
 - .toBeDefined: là hàm cho kết quả ngược lại toBeUndefined.
 - .toBeTruthy: so sánh với giá trị true.
 - .toBeFalsy: so sánh với giá trị false.
+```javascript
 		test('null', () => {
 			const n = null;
 			expect(n).toBeNull();
@@ -36,6 +37,7 @@
 			expect(z).not.toBeTruthy();
 			expect(z).toBeFalsy();
 		});
+```
 ### Number
 - .toBeGreaterThan : So sánh hơn
 - ..toBeLessThan: So sánh nhỏ hơn
@@ -54,7 +56,7 @@
 ```
 ### String
 - .toMatch: So sánh chuỗi
-
+```javascript
 		test('there is no I in team', () => {
 			expect('team').not.toMatch(/I/);
 		});
@@ -62,9 +64,10 @@
 		test('but there is a "stop" in Christoph', () => {
 			expect('Christoph').toMatch(/stop/);
 		});
+```		
 ### Array
 - .toContain: Kiểm tra giá trị có tồn tại trong mảng.
-
+```javascript
 		const shoppingList = [
 			'diapers',
 			'kleenex', 
@@ -76,6 +79,7 @@
 		test('the shopping list has beer on it', () => {
 			expect(shoppingList).toContain('beer');
 		});
+```
 ### Exceptions
 - .toThrow: Kiểm tra lỗi
 ## Unit tests
