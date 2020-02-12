@@ -2,14 +2,17 @@
 ### Các matchers
 - .toBe(): Giống như phép so sánh.
 - .toEqual(): So sánh một đối tượng, kiểm tra các trường của đối tượng đấy.
+
 		test('two plus two is four', () => {
 			expect(2 + 2).toBe(4);
 		});
+		
 		test('object assignment', () => {
 			const data = {one: 1};
 			data['two'] = 2;
 			expect(data).toEqual({one: 1, two: 2});
 		});
+
 ### Trạng thái
 - .toBeNull: so sánh với giá trị null.
 - .toBeUndefined: so sánh với giá trị undefined.
