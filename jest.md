@@ -36,6 +36,7 @@
 ### Number
 - .toBeGreaterThan : So sánh hơn
 - ..toBeLessThan: So sánh nhỏ hơn
+```javascript
 		test('two plus two', () => {
 			const value = 2 + 2;
 			expect(value).toBeGreaterThan(3);
@@ -47,6 +48,7 @@
 			expect(value).toBe(4);
 			expect(value).toEqual(4);
 		});
+```
 ### String
 - .toMatch: So sánh chuỗi
 		test('there is no I in team', () => {
