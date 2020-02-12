@@ -51,6 +51,7 @@
 ```
 ### String
 - .toMatch: So sánh chuỗi
+
 		test('there is no I in team', () => {
 			expect('team').not.toMatch(/I/);
 		});
@@ -60,6 +61,7 @@
 		});
 ### Array
 - .toContain: Kiểm tra giá trị có tồn tại trong mảng.
+
 		const shoppingList = [
 			'diapers',
 			'kleenex', 
