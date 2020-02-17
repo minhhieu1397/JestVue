@@ -47,8 +47,8 @@ describe('Hello.vue', () => {
 
         expect(wrapper.html()).toMatchSnapshot()
 
+//aaaaq
 
-        
         // wrapper.find('[jest="increment-button"]').trigger('click')
 
         // expect(wrapper.html()).toMatchSnapshot()
