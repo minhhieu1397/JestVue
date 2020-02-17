@@ -15,7 +15,6 @@ class TourController extends Controller
      */
     public function index()
     {
-        
         return Tour::find(1);
     }
 

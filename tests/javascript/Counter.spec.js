@@ -42,15 +42,17 @@ describe('Hello.vue', () => {
             expect(wrapper.vm.tour).toEqual({tour: [{tour_name: '1', vehicle: 'a', departure: '1', day_night: 'a', price: 'a', note: 'a'}]  });
         })
     })
-        it('snapshhot', () => {
-            const wrapper = mount(Counter);
+    it('snapshhot', () => {
+        const wrapper = mount(Counter);
 
-            expect(wrapper.html()).toMatchSnapshot()
+        expect(wrapper.html()).toMatchSnapshot()
 
-            // wrapper.find('[jest="increment-button"]').trigger('click')
 
-            // expect(wrapper.html()).toMatchSnapshot()
-        })
+        
+        // wrapper.find('[jest="increment-button"]').trigger('click')
+
+        // expect(wrapper.html()).toMatchSnapshot()
+    })
 })
 
 

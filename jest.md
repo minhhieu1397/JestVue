@@ -195,9 +195,6 @@ File test
 		 expect(wrapper).toMatchSnapshot()
 		});
 
-
-
-
 		it('fetches successfully data from an API', async () => {
         jest.mock('axios', () => ({
         get: jest.fn().mockResolvedValue({ data: {
